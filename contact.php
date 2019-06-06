@@ -18,14 +18,9 @@
  
  
  ?>
-
-
-    <!-- Navigation -->
     
     <?php  include "includes/navigation.php"; ?>
     
- 
-    <!-- Page Content -->
     <div class="container">
     
 <section id="login">

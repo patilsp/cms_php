@@ -1,9 +1,6 @@
 <?php include("includes/db.php"); ?>
-
 <?php include "includes/header.php"; ?>
-
  <?php include "includes/topbar.php"; ?>
-
    <?php include "includes/sidebar.php"; ?>
 
      <div class="app-content content container-fluid">
@@ -17,7 +14,6 @@
             <div class="col-md-8">
 
             <?php 
-
                 if(isset($_GET['p_id']))
                 {
                    $the_get_post_id = $_GET['p_id'];
@@ -189,7 +185,7 @@
     </div>
 </div>
 
-        <hr>
+ <hr>
 
 <?php include("includes/footer.php"); ?>
 

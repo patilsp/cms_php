@@ -1,30 +1,29 @@
 <?php include("includes/db.php"); ?>
-<?php include("includes/header.php"); ?>
+ <?php include("includes/header.php"); ?>
+  <?php include "includes/topbar.php"; ?>
+   <?php include "includes/sidebar.php"; ?>
 
-    <!-- navbar-fixed-top-->
-    <?php include "includes/topbar.php"; ?>
-
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
-
-
-    <!-- main menu-->
-       <?php include "includes/sidebar.php"; ?>
-    <!-- / main menu-->
-
-   
-   
+     <section id="shadow" class="card overflow-hidden">
+      <div class="card-header">
+        <h3 class="card-title green">Latest Updates</h3>
+        <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+        <div class="heading-elements">
+        <ul class="list-inline mb-0">
+            <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+            <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+            <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+        </ul>
+    </div>
+    </div>
+     
     <div class="app-content content container-fluid">
       <div class="content-wrapper">
         <div class="content-header row"></div>
             <div class="content-body">
             <div class="row">
+               <div class="col-md-8">
             
-                 <!-- Blog Entries Column -->
-            <div class="col-md-8">
-            
-            
-
-            <?php 
+                <?php 
 
                     $per_page = 5;
 
@@ -54,21 +53,6 @@
                 {
                     $post_query_count = "SELECT * FROM posts WHERE post_status = 'published'";
                 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                
                 $find_count = mysqli_query($connection, $post_query_count);
                 $count = mysqli_num_rows($find_count);
 
@@ -78,8 +62,6 @@
                 }
                 else
                 {
-
-                
 
                 $count = ceil($count / $per_page);
             
@@ -98,23 +80,12 @@
                     $post_tags          = $row['post_tags'];
                     $post_comment_count = $row['post_comment_count'];
                     $post_status        = $row['post_status'];
-
-                    
-                    
-
-                    
-            ?>
-
-                <h1 class="green">
-                    Latest Updates
-                    
-                </h1>
-
-                <!-- First Blog Post -->
+                ?>
+      
                 <h2>
-                    <a href="post.php?p_id=<?php echo $post_id;?>"><?php echo $post_title; ?></a>
+                    <a class="green" href="post.php?p_id=<?php echo $post_id;?>"><?php echo  $post_title; ?></a>
                 </h2>
-                <p class="lead">
+                <p class="black">
                    Author <a href="author_posts.php?author=<?php echo $post_user; ?>&p_id=<?php echo $post_id;?>"><?php echo $post_user; ?></a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date; ?></p>
@@ -125,27 +96,17 @@
                 <hr>
                 <p><?php echo $post_content; ?></p>
                 <a class="btn btn-primary" href="post.php?p_id=<?php echo $post_id; ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
-
                 <hr>
-
             <?php
                 }}
             ?>
-
-                
-
-                
+            
 
             </div>
-   
-     <!-- Blog Sidebar Widgets Column -->
+
             <?php include("includes/sidebar2.php"); ?>
-
         </div>
-        <!-- /.row -->
-
-        <hr>
-
+   
          <ul class="pager">
             <?php
             
@@ -163,20 +124,9 @@
                 }
 
             ?>
-        </ul>
-  
-  
-  
-  
- 
-            
+         </ul>
         </div>
       </div>
     </div>
-    
-
-
-
-
-
-    <?php include "includes/footer.php"; ?>
+ </section>
+<?php include "includes/footer.php"; ?>
