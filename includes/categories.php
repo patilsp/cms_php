@@ -20,9 +20,9 @@
 
                 <!-- Page Heading -->
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-10">
                         <h1 class="page-header">
-                            Category Page
+                             View Categories 
                             
                         </h1>
                         <div class="col-xs-6">
@@ -55,7 +55,9 @@
 
                         </div>
 
-                       
+                            </div>
+                        </div>
+                        
                         <div class="card-body collapse in">
                 <div class="card-block card-dashboard">
                           <div class="table-responsive">
@@ -84,8 +86,7 @@
                                 </tbody>
                             </table>
                         </div>
-                            </div>
-                        </div>
+                       
                     </div>
                 </div>
                 <!-- /.row -->

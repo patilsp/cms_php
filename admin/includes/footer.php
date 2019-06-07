@@ -1,8 +1,20 @@
 
-    <footer class="footer footer-static footer-light navbar-border">
-      <p class="clearfix text-muted text-sm-center mb-0 px-2"><span class="float-md-left d-xs-block d-md-inline-block">Copyright  &copy; 2019 <a href="https://themeforest.net/user/pixinvent/portfolio?ref=pixinvent" target="_blank" class="text-bold-800 grey darken-2">TECHNOTIPS </a>, All rights reserved. </span><span class="float-md-right d-xs-block d-md-inline-block"> </span></p>
+       <footer class="footer footer-static footer-light navbar-border">
+      <p class="clearfix text-muted text-sm-center mb-0 px-2">
+       <span class="float-md-right d-xs-block d-md-inline-block"> 
+        <div class="row py-1">
+            <div class="text-xs-center">
+                <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-facebook"><span class="icon-facebook3"></span></a>
+                <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-twitter"><span class="icon-twitter3"></span></a>
+                <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-linkedin"><span class="icon-linkedin3 font-medium-4"></span></a>
+                <a href="#" class="btn btn-social-icon mr-1 mb-1 btn-outline-github"><span class="icon-github font-medium-4"></span></a>
+            </div>
+        </div>
+      
+      </span></p>
+      
+      
     </footer>
-
     <!-- BEGIN VENDOR JS-->
     <script src="js/jquery.min.js" type="text/javascript"></script>
     <script src="js/tether.min.js" type="text/javascript"></script>

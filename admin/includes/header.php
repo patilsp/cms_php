@@ -1,29 +1,20 @@
+<?php ob_start(); ?>
+<?php session_start(); ?>
 <?php include "../includes/db.php"; ?>
 <?php include "./functions.php"; ?>
 
-
-<?php ob_start(); ?>
-<?php session_start(); ?>
-
-
-
-
 <?php
 
-if (!isset($_SESSION['user_role'])){
-
-  if ($_SESSION['user_role']!== 'admin'){
-
-  header ("Location: ../index.php");
-}
-
+  if(!isset($_SESSION['user_role']))
+    {
+            header("Location: ../index.php");   
+    }
+    else if(isset($_SESSION['user_role']) && $_SESSION['user_role'] == "Subscriber")
+    {
+        header("Location: ../index.php");
 }
 
 ?>
-
-
-
-
 <!DOCTYPE html>
 <html lang="en" data-textdirection="ltr" class="loading">
   <head>
@@ -34,35 +25,22 @@ if (!isset($_SESSION['user_role'])){
         <meta name="keywords" content="admin template, robust admin template, dashboard template, flat admin template, responsive admin template, web app">
     <meta name="author" content="PIXINVENT">
     <title>TechnoTips</title>
-    <link rel="apple-touch-icon" sizes="60x60" href="images/ico/apple-icon-60.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="images/ico/apple-icon-76.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="images/ico/apple-icon-120.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/ico/apple-icon-152.png">
-    <link rel="shortcut icon" type="image/x-icon" href="images/ico/favicon.ico">
-    <link rel="shortcut icon" type="image/png" href="images/ico/favicon-32.png">
+  
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default">
-    <!-- BEGIN VENDOR CSS-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
-    <!-- font icons-->
     <link rel="stylesheet" type="text/css" href="fonts/icomoon.css">
     <link rel="stylesheet" type="text/css" href="fonts/flag-icon-css/css/flag-icon.min.css">
     <link rel="stylesheet" type="text/css" href="css/extensions/pace.css">
-    <!-- END VENDOR CSS-->
-    <!-- BEGIN ROBUST CSS-->
     <link rel="stylesheet" type="text/css" href="css/bootstrap-extended.css">
     <link rel="stylesheet" type="text/css" href="css/app.css">
     <link rel="stylesheet" type="text/css" href="css/colors.css">
-   
-    <!-- END ROBUST CSS-->
-    <!-- BEGIN Page Level CSS-->
     <link rel="stylesheet" type="text/css" href="css/core/menu/menu-types/vertical-menu.css">
     <link rel="stylesheet" type="text/css" href="css/core/menu/menu-types/vertical-overlay-menu.css">
     <link rel="stylesheet" type="text/css" href="css/core/colors/palette-gradient.css">
-    <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <!-- END Custom CSS-->
+    
+    <script src="js/script2.js"></script>
   </head>
   <body data-open="click" data-menu="vertical-menu" data-col="2-columns" class="vertical-layout vertical-menu 2-columns  fixed-navbar">

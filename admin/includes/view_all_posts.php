@@ -68,7 +68,24 @@ if(isset($_POST['checkBoxArray']))
 
 
 ?>
-
+<div class="row">
+    <div class="col-xs-12">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="card-title">View All Posts</h4>
+                <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+                <div class="heading-elements">
+                    <ul class="list-inline mb-0">
+                        <li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+                        <li><a data-action="reload"><i class="icon-reload"></i></a></li>
+                        <li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+                        <li><a data-action="close"><i class="icon-cross2"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            
+            
 <form action="" method="post">
     <table class="table table-responsive table-hover">
 
@@ -86,6 +103,12 @@ if(isset($_POST['checkBoxArray']))
         <input type="submit" value="Apply" name="submit" class="btn btn-success">
         <a class="btn btn-primary" href="posts.php?source=add_post">Add New Post</a>
     </div>
+        
+        <div class="card-body collapse in">
+              <div class="table-responsive">
+                    <table class="table">
+                      
+        
 
         <thead>
             <tr>
@@ -177,22 +200,24 @@ if(isset($_POST['checkBoxArray']))
                 echo "<td>$post_date</td>";
                 echo "<td><a class='btn btn-primary' href='../post.php?p_id=$post_id'>View Post</a></td>";
                 echo "<td><a class='btn btn-warning' href='posts.php?source=edit_post&p_id=$post_id'>Edit</a></td>";
-                // echo "<td><a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" class='btn btn-danger' href='posts.php?delete=$post_id'>Delete</a></td>";
-                echo "<td><a rel='$post_id' href='javascript:void(0)' class='delete_link btn btn-danger'>Delete</a></td>";
+                 echo "<td><a onClick=\"javascript: return confirm('Are you sure you want to delete'); \" class='btn btn-danger' href='posts.php?delete=$post_id'>Delete</a></td>";
+               // echo "<td><a rel='$post_id' href='javascript:void(0)' class='delete_link btn btn-danger'>Delete</a></td>";
                 echo "<td><a href='posts.php?reset=$post_id' class='btn btn-success'>$post_views_count</a></td>";
                 echo "</tr>";
             }
         ?>
         
+                </tbody>
+                </table>
 
-            
-        
+                </div>
 
-            
-        </tbody>
-    </table>
-</form>
-
+               </div>
+             </table>
+          </form>
+       </div>
+     </div>
+  </div>
 <?php
 
 if (isset($_GET['delete'])) 

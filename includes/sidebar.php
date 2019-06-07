@@ -76,25 +76,17 @@
 
         ?>
         
-                        </ul>
-            </li>
+         </ul>
+        </li>
         
-        
-        
- 
-         <li class='<?php echo $registration_class; ?>'>
-                    <a href="registration.php">Registration</a>
-                </li>
-                <li class='<?php echo $contact_class; ?>'>
-                    <a href="contact.php">Contact</a>
-              </li>
-      
-     
-          <li class=" navigation-header"><span data-i18n="nav.category.support">Support</span><i data-toggle="tooltip" data-placement="right" data-original-title="Support" class="icon-ellipsis icon-ellipsis"></i>
+          <li class='<?php echo $registration_class; ?>'><a href="registration.php"><i class="icon-user"></i>    <span data-i18n="nav.support_documentation.main" class="menu-title">Registration</span></a>
           </li>
-          <li class=" nav-item"><a href="https://github.com/pixinvent/robust-free-bootstrap-admin-template/issues"><i class="icon-support"></i><span data-i18n="nav.support_raise_support.main" class="menu-title">Raise Support</span></a>
+  
+          <li class=" nav-item"><a href="login_here.php"><i class="icon-user"></i><span data-i18n="nav.support_raise_support.main" class="menu-title">Login</span></a>
           </li>
-          <li class=" nav-item"><a href="https://pixinvent.com/free-bootstrap-template/robust-lite/documentation"><i class="icon-document-text"></i><span data-i18n="nav.support_documentation.main" class="menu-title">Documentation</span></a>
+          <li class='<?php echo $contact_class; ?>'><a href="contact.php"><i class="icon-document-text"></i>    <span data-i18n="nav.support_documentation.main" class="menu-title">Conatct Us</span></a>
+          </li>
+           <li class=" nav-item"><a href="https://pixinvent.com/free-bootstrap-template/robust-lite/documentation"><i class="icon-document-text"></i>    <span data-i18n="nav.support_documentation.main" class="menu-title">About Us</span></a>
           </li>
         </ul>
       </div>

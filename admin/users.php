@@ -1,30 +1,16 @@
-
 <?php include "includes/header.php"; ?>
-
-    <!-- navbar-fixed-top-->
-    <?php include "includes/topbar.php"; ?>
-
-    <!-- ////////////////////////////////////////////////////////////////////////////-->
-
-
-    <!-- main menu-->
-       <?php include "includes/sidebar.php"; ?>
-    <!-- / main menu-->
-
-    <div class="app-content content container-fluid">
+  <?php include "includes/topbar.php"; ?>
+    <?php include "includes/sidebar.php"; ?>
+     <div class="app-content content container-fluid">
       <div class="content-wrapper">
         <div class="content-header row">
         </div>
-        <div class="content-body">
-
-    <div class="row">
+         <div class="content-body">
+            <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
-                            View All Users
-                           
-                        </h1>
+                  
                         <?php
-                            // Displaying pages based on condition
+              
                             if (isset($_GET['source'])) 
                             {
                                 $source = $_GET['source'];
@@ -51,15 +37,7 @@
                         ?>
                     </div>
                 </div>
-                <!-- /.row -->
-
             </div>
-            <!-- /.container-fluid -->
-
         </div>
-        <!-- /#page-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
-
 <?php include("includes/footer.php"); ?>

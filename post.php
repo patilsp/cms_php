@@ -1,6 +1,9 @@
 <?php include("includes/db.php"); ?>
+
 <?php include "includes/header.php"; ?>
+
  <?php include "includes/topbar.php"; ?>
+
    <?php include "includes/sidebar.php"; ?>
 
      <div class="app-content content container-fluid">
@@ -14,6 +17,7 @@
             <div class="col-md-8">
 
             <?php 
+
                 if(isset($_GET['p_id']))
                 {
                    $the_get_post_id = $_GET['p_id'];
@@ -59,13 +63,8 @@
                     $post_comment_count = $row['post_comment_count'];
                     $post_status        = $row['post_status'];
             ?>
-
-                <h1 class="green">
-                    Post Details
-                    
-                </h1>
            
-                <h2>
+                <h2 class="green">
                     <a href="#"><?php echo $post_title; ?></a>
                 </h2>
                 <p class="lead">
@@ -73,8 +72,12 @@
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date; ?></p>
                 <hr>
-                <img class="img-responsive" src="images/<?php echo $post_image; ?>" alt="">
+                <img class="img-responsive img-thumbnail img-fluid" src="images/<?php echo $post_image; ?>" alt="">
                 <hr>
+          
+                
+                
+                
                 <p><?php echo $post_content; ?></p>
                 
 
@@ -119,10 +122,10 @@
             ?>
 
                 <div class="well">
-                    <h4>Leave a Comment:</h4>
+                    <h4 class="green">Leave a Comment:</h4>
                     <form action="" method="post" role="form">
                         <div class="form-group">
-                            <label for="comment_author">Author</label>
+                            <label for="comment_author">User Name</label>
                             <input type="text" name="comment_author" class="form-control">
                         </div>
 
@@ -137,11 +140,12 @@
                         </div>
 
                         <button name="create_comment" type="submit" class="btn btn-primary">Submit</button>
+                      
                     </form>
                 </div>
               
           </div>
-
+  <hr>
         
                 <?php
                 
@@ -185,7 +189,7 @@
     </div>
 </div>
 
- <hr>
+     
 
 <?php include("includes/footer.php"); ?>
 

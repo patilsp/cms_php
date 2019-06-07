@@ -29,21 +29,26 @@
     }
 
 ?>
-
-
+<div class="row">
+		<div class="col-md-6 offset-md-2">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="green" id="basic-layout-card-center">Add User Here</h4>
+					<a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+					<div class="heading-elements">
+						<ul class="list-inline mb-0">
+							<li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+							<li><a data-action="reload"><i class="icon-reload"></i></a></li>
+							<li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+							<li><a data-action="close"><i class="icon-cross2"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="card-body collapse in">
+					<div class="card-block">
 <form action="" method="post" enctype="multipart/form-data">
     
-    <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" name="username" class="form-control">
-    </div>
-
-    <div class="form-group">
-            <label for="password">Password</label>
-            <input type="password" name="password" class="form-control">
-    </div>
-
-    <div class="form-group">
+     <div class="form-group">
         <label for="user_firstname">Firstname</label>
         <input type="text" name="user_firstname" class="form-control">
     </div>
@@ -57,9 +62,18 @@
         <label for="user_email">Email</label>
         <input type="email" name="user_email" class="form-control">
     </div>
+       <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" name="username" class="form-control">
+    </div>
 
     <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" name="password" class="form-control">
+    </div>
+    <div class="form-group">
         <label for="user_image">Image</label>
+        <img class="img-responsive" width="200" src="../images/<?php echo $user_image; ?>" alt="">
         <input type="file" name="user_image" class="form-control">
     </div>
 
@@ -72,8 +86,18 @@
 
     </div>
 
+   	<div class="form-actions center">
     <div class="form-group">
         <input type="submit" value="Add User" name="create_user" class="btn btn-primary">
     </div>
-
+    </div>
 </form>
+
+
+        </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -26,7 +26,7 @@
     {
        $post_title          =  mysqli_real_escape_string($connection, trim($_POST['post_title']));
        $post_category_id    =  mysqli_real_escape_string($connection, trim($_POST['post_category_id']));
-       $post_user         =  mysqli_real_escape_string($connection, trim($_POST['post_user']));
+       $post_user           =  mysqli_real_escape_string($connection, trim($_POST['post_user']));
        $post_status         =  mysqli_real_escape_string($connection, trim($_POST['post_status']));
 
        $post_image          =  $_FILES['image']['name'];
@@ -128,12 +128,6 @@
             
         </select>
     </div>
-
-    <!-- <div class="form-group">
-        <label for="post_user">Post Author</label>
-        <input type="text" name="post_user" class="form-control" value="<?php// echo $post_user; ?>">
-    </div> -->
-
     <div class="form-group">
         <label for="post_category">Post Status</label>
         <select name="post_status" class="form-control">
@@ -152,11 +146,6 @@
             
         </select>
     </div>
-
-    <!-- <div class="form-group">
-        <label for="post_status">Post Status</label>
-        <input type="text" name="post_status" class="form-control" value="<?php //echo $post_status; ?>">
-    </div> -->
 
     <div class="form-group">
         <img class='img-responsive' width = "200" src="../images/<?php echo $post_image; ?>" alt="">

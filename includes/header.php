@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="css/core/menu/menu-types/vertical-overlay-menu.css">
     <link rel="stylesheet" type="text/css" href="css/core/colors/palette-gradient.css">
     <!-- END Page Level CSS-->
-    <!-- BEGIN Custom CSS-->
+    <link rel="stylesheet" href="css/mystyle.css" type="text/css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <!-- END Custom CSS-->
   </head>

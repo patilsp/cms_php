@@ -5,7 +5,7 @@
 
      <section id="shadow" class="card overflow-hidden">
       <div class="card-header">
-        <h3 class="card-title green">Latest Updates</h3>
+        <h3 class="pink text-xs-center">Latest Updates</h3>
         <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
         <div class="heading-elements">
         <ul class="list-inline mb-0">
@@ -91,8 +91,17 @@
                 <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date; ?></p>
                 <hr>
                 <a href="post.php?p_id=<?php echo $post_id; ?>">
-                    <img class="img-responsive" src="images/<?php echo $post_image; ?>" alt="">
+                    <img class="img-thumbnail img-fluid" src="images/<?php echo $post_image; ?>" alt="">
                 </a>
+                 <hr>  
+                                                   
+                <ul class="list-inline mb-1">
+                    <li class="pr-1"><a href="#" class="text-muted"><span class="icon-ei-heart"></span> Like</a></li>
+                    <li class="pr-1"><a href="#" class="text-muted"><span class="icon-chat2"></span> Comment</a></li>
+                    
+                    <li><a href="#" class="text-muted"><span class="icon-share4"></span> Share</a></li>
+                </ul>
+          
                 <hr>
                 <p><?php echo $post_content; ?></p>
                 <a class="btn btn-primary" href="post.php?p_id=<?php echo $post_id; ?>">Read More <span class="glyphicon glyphicon-chevron-right"></span></a>
@@ -105,26 +114,37 @@
             </div>
 
             <?php include("includes/sidebar2.php"); ?>
-        </div>
-   
-         <ul class="pager">
-            <?php
-            
-                for ($i = 1; $i <= $count; $i++) 
-                { 
-                    if($i == $page)
-                    {
-                        echo "<li><a class='active_link' href='index.php?page=$i'>$i</a></li>";
-                    }
-                    else
-                    {
-                        echo "<li><a href='index.php?page=$i'>$i</a></li>";
-                    }
-                    
-                }
 
-            ?>
-         </ul>
+        </div>
+
+    <div class="col-xl-12">
+              
+                <div class="text-xs-center mb-3">
+                    <nav aria-label="Page navigation">
+						
+                 <ul class="pagination ">
+                         <?php
+                            echo "<li class='page-item'><a class='page-link' href='index.php'>Previous</a></li>";
+                            for ($i = 1; $i <= $count; $i++) 
+                            { 
+                                if($i == $page)
+                                {
+                                    echo "<li class='page-item'><a class='active_link' href='index.php?page=$i'> $i </a></li>";
+                                }
+                                else
+                                {
+                                    echo "<li class='page-item'><a class='page-link' href='index.php?page=$i'>$i</a></li>";
+                                }
+
+                            }
+                            echo "<li class='page-item'><a class='page-link' href='index.php?page=$page'>Next</a></li>";
+                        ?>
+
+                     </ul>
+         		
+                </nav>
+            </div>
+        </div>
         </div>
       </div>
     </div>

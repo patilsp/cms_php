@@ -20,12 +20,12 @@
 
                 <!-- Page Heading -->
                 <div class="row">
-                    <div class="col-lg-6">
-                        <h1 class="page-header">
-                            Category Page
+                    <div class="col-lg-8">
+                        <h1 class="green">
+                           View All Categories
                             
                         </h1>
-                        <div class="col-xs-6">
+                        <div class="col-xs-8">
                         
                         <?php
                             // Code to add categories
@@ -54,11 +54,12 @@
                             ?>
 
                         </div>
-
+                    </div>
+            
                        
-                        <div class="card-body collapse in">
+              <div class="card-body collapse in">
                 <div class="card-block card-dashboard">
-                          <div class="table-responsive">
+                  <div class="table-responsive">
                     <table class="table table-inverse mb-0">
                         <thead>
                             <tr>

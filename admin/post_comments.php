@@ -1,20 +1,18 @@
-<?php include "includes/header.php" ?>
+<?php include "includes/header.php"; ?>
 
-  <div id="wrapper">
-   
-   <?php include "includes/navigation.php" ?>
-   
-    <div id="content-wrapper" class="d-flex flex-column">
+    <?php include "includes/topbar.php"; ?>
 
-      <div id="content">
+       <?php include "includes/sidebar.php"; ?>
 
-       <?php include "includes/topbar.php" ?>
-
-        <div class="container-fluid">
+     <div class="app-content content container-fluid">
+      <div class="content-wrapper">
+        <div class="content-header row">
+        </div>
+        <div class="content-body">
           
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="page-header">
+                        <h1 class="green">
                             Welcome To Admin
                        
                         </h1>
@@ -56,21 +54,6 @@
             echo "<td>$comment_id</td>";
             echo "<td>$comment_author</td>";
             echo "<td>$comment_content</td>";
-
-            // $query = "SELECT * FROM categories WHERE cat_id = $post_category_id";
-            // $select_categories = mysqli_query($connection, $query);
-            // while($row = mysqli_fetch_array($select_categories))
-            // {
-            //     $cat_id = $row['cat_id'];
-            //     $cat_title = $row['cat_title'];
-
-            //     echo "<td>$cat_title</td>";
-            // }
-            
-
-            
-
-
 
             echo "<td>$comment_email";
             echo "<td>$comment_status</td>";
@@ -146,17 +129,12 @@ if(isset($_GET['unapprove']))
 }
 
 ?>
-                    </div>
-                </div>
-                <!-- /.row -->
-
             </div>
-            <!-- /.container-fluid -->
-
         </div>
-        <!-- /#page-wrapper -->
-
     </div>
-    <!-- /#wrapper -->
+</div>
+
+</div>
+
 
 <?php include("includes/footer.php"); ?>

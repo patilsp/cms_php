@@ -63,39 +63,43 @@ if(isset($_POST['update_user']))
 
 ?>
 
-
-<?php include "includes/header.php"; ?>
-
     <?php include "includes/topbar.php"; ?>
 
-
        <?php include "includes/sidebar.php"; ?>
-   
 
-    <div class="app-content content container-fluid">
+   <div class="app-content content container-fluid">
       <div class="content-wrapper">
-        <div class="content-header row">
-        </div>
-        <div class="content-body">
-
-             <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">
+      <div class="form-actions center">
+      	       <h1 class="green">
                             Welcome To Admin
-                       
+                            <small class="pink"><?php echo $_SESSION['username']; ?></small>
                         </h1>
-                        
-                        <div class="card-body collapse in">
+          </div>
+      <div class="row">
+		<div class="col-md-6 offset-md-2">
+			<div class="card">
+				<div class="card-header">
+					<h4 class="green" id="basic-layout-card-center">Add User</h4>
+					<a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
+					<div class="heading-elements">
+						<ul class="list-inline mb-0">
+							<li><a data-action="collapse"><i class="icon-minus4"></i></a></li>
+							<li><a data-action="reload"><i class="icon-reload"></i></a></li>
+							<li><a data-action="expand"><i class="icon-expand2"></i></a></li>
+							<li><a data-action="close"><i class="icon-cross2"></i></a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="card-body collapse in">
 					<div class="card-block">
-					
 				
+
                         <form action="" method="post" enctype="multipart/form-data">
     
                             <div class="form-group">
                                     <label for="username">Username</label>
                                     <input type="text" name="username" value="<?php echo $username; ?>" class="form-control">
                             </div>
-                  
 
                             <div class="form-group">
                                     <label for="password">Password</label>
@@ -146,17 +150,20 @@ if(isset($_POST['update_user']))
                                 </select>
 
                             </div>
-
-                            <div class="form-group">
+                              <div class="form-actions center">
+                                <div class="form-group">
                                 <input type="submit" value="Update Profile" name="update_user" class="btn btn-primary">
                             </div>
-
+                            </div>
                         </form>
 
+		</div>
+		</div>
+	</div>
+      
+      
+      
 
-                            </div>
-                        </div>
-                        
 
 
 
