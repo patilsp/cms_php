@@ -12,8 +12,7 @@
         <div class="row">
         <div class="col-lg-12">
             <h1 class="green"> Welcome To Admin Page
-               <small class="pink"> <?php echo $_SESSION['username'] ?> </small>
-               </h1>
+                  </h1>
         </div>
         </div>
         <hr>

@@ -163,7 +163,7 @@
     </div>
 
     <div class="form-group">
-        <input type="submit" value="Edit Post" name="update_post" class="btn btn-primary">
+        <input type="submit" value="Update Post" name="update_post" class="btn btn-primary">
     </div>
 
 </form>

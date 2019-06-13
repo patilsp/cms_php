@@ -104,14 +104,10 @@
                   <li class="dropdown-menu-footer"><a href="javascript:void(0)" class="dropdown-item text-muted text-xs-center">Read all messages</a></li>
                 </ul>
               </li>
-
-                             
-             <li class="dropdown dropdown-user nav-item">
-             <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link">
-              <span class="avatar avatar-online">
-               <img src="../images/avatar.png" alt="avatar"><i></i>
-               </span>
-                <span class="user-name green"><?php echo $_SESSION['username']; ?></span></a>
+      
+              <li class="dropdown dropdown-user nav-item">
+               <a href="#" data-toggle="dropdown" class="dropdown-toggle nav-link dropdown-user-link">
+                <span class="green"><?php echo $_SESSION['username'] ?>  <b class="caret"></b></span></a>
                 <div class="dropdown-menu dropdown-menu-right">
                 <a href="profile.php" class="dropdown-item"><i class="icon-head"></i> Edit Profile</a>
                 <a href="../index.php" class="dropdown-item"><i class="icon-home"></i> Home Page</a>

@@ -1,3 +1,5 @@
+<?php ob_start(); ?>
+
 <?php include("includes/db.php"); ?>
  <?php include("includes/header.php"); ?>
   <?php include "includes/topbar.php"; ?>
@@ -5,7 +7,6 @@
 
      <section id="shadow" class="card overflow-hidden">
       <div class="card-header">
-        <h3 class="pink text-xs-center">Latest Updates</h3>
         <a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
         <div class="heading-elements">
         <ul class="list-inline mb-0">
@@ -76,7 +77,7 @@
                     $post_user        = $row['post_user'];
                     $post_date          = $row['post_date'];
                     $post_image         = $row['post_image'];
-                    $post_content       = substr($row['post_content'], 0, 80);
+                    $post_content       = substr($row['post_content'], 0, 50);
                     $post_tags          = $row['post_tags'];
                     $post_comment_count = $row['post_comment_count'];
                     $post_status        = $row['post_status'];
@@ -89,6 +90,7 @@
                    Author <a href="author_posts.php?author=<?php echo $post_user; ?>&p_id=<?php echo $post_id;?>"><?php echo $post_user; ?></a>
                 </p>
                 <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date; ?></p>
+                    
                 <hr>
                 <a href="post.php?p_id=<?php echo $post_id; ?>">
                     <img class="img-thumbnail img-fluid" src="images/<?php echo $post_image; ?>" alt="">

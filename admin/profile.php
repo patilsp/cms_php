@@ -69,11 +69,17 @@ if(isset($_POST['update_user']))
 
    <div class="app-content content container-fluid">
       <div class="content-wrapper">
-        <div class="row">
+      <div class="form-actions center">
+      	       <h1 class="green">
+                            Welcome To Admin
+                            <small class="pink"><?php echo $_SESSION['username']; ?></small>
+                        </h1>
+          </div>
+      <div class="row">
 		<div class="col-md-6 offset-md-2">
 			<div class="card">
 				<div class="card-header">
-					<h4 class="green" id="basic-layout-card-center">Edit Your Profile</h4>
+					<h4 class="green" id="basic-layout-card-center">Add User</h4>
 					<a class="heading-elements-toggle"><i class="icon-ellipsis font-medium-3"></i></a>
 					<div class="heading-elements">
 						<ul class="list-inline mb-0">

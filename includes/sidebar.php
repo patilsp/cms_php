@@ -3,9 +3,7 @@
       <div class="main-menu-header">
         <input type="text" placeholder="Search" class="menu-search form-control round"/>
       </div>
-      <!-- / main menu header-->
-      <!-- main menu content-->
-      <div class="main-menu-content">
+       <div class="main-menu-content">
         <ul id="main-menu-navigation" data-menu="menu-navigation" class="navigation navigation-main">
           <li class=" nav-item"><a href="index.php"><i class="icon-home3"></i><span data-i18n="nav.dash.main" class="menu-title">Home</span></a>
          
@@ -13,8 +11,7 @@
           
           
           
-          <li class=" nav-item"><a href="admin"><i class="icon-home3"></i>
-          <span data-i18n="nav.page_layouts.main" class="menu-title">ADMIN</span></a>
+          <li class=" nav-item"><a href="admin"><i class="icon-home3"></i><span data-i18n="nav.page_layouts.main" class="menu-title">ADMIN</span></a>
            
           </li>
               <?php

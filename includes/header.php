@@ -1,4 +1,3 @@
-<?php session_start();?>
 <!DOCTYPE html>
 <html lang="en" data-textdirection="ltr" class="loading">
   <head>

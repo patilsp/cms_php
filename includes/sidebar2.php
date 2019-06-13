@@ -13,7 +13,7 @@
         </form>
     </div>
     <hr>
-              
+
     <div class="well">
         <h4 class="green">Blog Categories</h4>
         <div class="row">
