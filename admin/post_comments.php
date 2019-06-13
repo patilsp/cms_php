@@ -12,10 +12,7 @@
           
                 <div class="row">
                     <div class="col-lg-12">
-                        <h1 class="green">
-                            Welcome To Admin
-                       
-                        </h1>
+                 
 
 <table class="table table-responsive table-hover table-bordered">
     <thead>

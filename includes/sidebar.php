@@ -1,4 +1,4 @@
- <div data-scroll-to-active="true" class="main-menu menu-fixed menu-dark menu-accordion menu-shadow">
+ <div data-scroll-to-active="true" class="main-menu menu-fixed menu-light menu-accordion menu-shadow">
       <!-- main menu header-->
       <div class="main-menu-header">
         <input type="text" placeholder="Search" class="menu-search form-control round"/>

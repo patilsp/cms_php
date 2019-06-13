@@ -165,15 +165,15 @@
                         $commet_content = $row['comment_content'];
                 ?>
              
-                <div class="media">
-                   
-                    <div class="media-body">
-                        <h4 class="media-heading"><?php echo $comment_author; ?>
-                            <small><?php echo $comment_date; ?></small>
-                        </h4>
-                        <?php echo $commet_content; ?>
+                    <div class="col-mad-8">
+                    
+                        <div class="media-body">
+                            <h4 class="media-heading"><?php echo $comment_author; ?>
+                                <small><?php echo $comment_date; ?></small>
+                            </h4>
+                            <?php echo $commet_content; ?>
+                        </div>
                     </div>
-                </div>
                 <?php
                     } } }
                     else
