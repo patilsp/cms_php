@@ -76,7 +76,7 @@
                     $post_user        = $row['post_user'];
                     $post_date          = $row['post_date'];
                     $post_image         = $row['post_image'];
-                    $post_content       = substr($row['post_content'], 0, 50);
+                    $post_content       = substr($row['post_content'], 0, 80);
                     $post_tags          = $row['post_tags'];
                     $post_comment_count = $row['post_comment_count'];
                     $post_status        = $row['post_status'];

@@ -9,10 +9,9 @@ define('DB_NAME', 'cms');
 
 $connection = mysqli_connect(DB_HOST, DB_USER, DB_PASS, DB_NAME);
 
-if(!$connection)
-{
-    die ("Connection failed " . mysqli_error());
-}
-
+    if(!$connection)
+    {
+        die ("Connection failed " . mysqli_error());
+    }
 
 ?>

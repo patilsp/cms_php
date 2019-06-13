@@ -67,7 +67,7 @@
     <div class="card-footer">
         <div class="">
             <p class="float-sm-left text-xs-center m-0"><a href="recover-password.html" class="card-link">Recover password</a></p>
-            <p class="float-sm-right text-xs-center m-0">New to Robust? <a href="registration.php" class="card-link">Sign Up</a></p>
+            <p class="float-sm-right text-xs-center m-0">New to Technotips <a href="registration.php" class="card-link">Sign Up</a></p>
         </div>
     </div>
 </div>
